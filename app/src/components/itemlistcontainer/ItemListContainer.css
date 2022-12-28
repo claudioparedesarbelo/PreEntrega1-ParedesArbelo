@@ -1,0 +1,6 @@
+.Productos {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 80px 150px 60px;
+}
+
