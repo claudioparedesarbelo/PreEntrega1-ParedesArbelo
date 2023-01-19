@@ -10,7 +10,7 @@ const ItemList = (props) => {
   const [productos,setProductos] = useState([])
 
   useEffect(()=>{
-    fetch('../../public/productos.json')
+    fetch('../productos.json')
 .then(res=>res.json())
 .then(json => setProductos(json.map(productos => <Item key={productos.id} id={"producto" + productos.id} data={productos}/>)))
 },[])

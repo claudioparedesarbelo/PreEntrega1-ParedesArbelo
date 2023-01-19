@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     const { productoId } = useParams()
 
     useEffect(()=>{
-        fetch(`https://fakestoreapi.com/products/${productoId}`)
+        fetch(`../productos.json ${productoId}`)
     .then(res=>res.json())
     .then(productos => setProductos(<ItemDetail key={productos.id} id={"producto" + productos.id} data={productos} />))
     },[productoId])
