@@ -7,22 +7,18 @@ import ItemCount from '../itemCount/ItemCount'
 
 
 
-
 const Item = (props) => {
+    const {id, articulo, nombre, precio, stock} = props.data
 
-    const { title, category, description, price, id} = props.data
-
-    return (
+     
+     return (
 
         <Card className='card-separated'>
-            <Card.Header as="h5">{category}</Card.Header>
+            <Card.Header as="h5">{articulo}</Card.Header>
             <Card.Body>
-                <Card.Title>{title} || Value ={price}</Card.Title>
-                <Card.Text>
-                    {description}
-                </Card.Text>
+                <Card.Title>{nombre} || Value ={precio}</Card.Title>
                 <Link to={`/producto/${id}`}> Ver Detalle del Producto </Link>
-                <ItemCount stock={10} />
+                <ItemCount stock={stock} />
                 
             </Card.Body>
         </Card>
