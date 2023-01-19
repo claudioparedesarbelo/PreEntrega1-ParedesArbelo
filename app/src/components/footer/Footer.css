@@ -1,14 +1,13 @@
-.Footer {
-    background-color: rgb(224, 217, 217);
-    padding: 20px 50px 20px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    border: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-
-.Iconos img {
-    padding-right: 20px;
-    width: 60px;
-    
+.footer p{
+padding: 1rem 0;
 }

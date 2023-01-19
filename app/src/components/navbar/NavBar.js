@@ -16,8 +16,7 @@ return(
        <Button variant="outline-secondary">Productos</Button>{' '}
        <Button variant="outline-secondary">Categorias</Button>{' '}
        <Button variant="outline-secondary">Nosotros</Button>{' '}
-       
-        <CardWidget></CardWidget>
+       <CardWidget></CardWidget>
         </div>
         
     </header>
